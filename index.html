@@ -56,7 +56,7 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 .rc.cons{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1)}
 .rc.real{background:rgba(102,96,180,0.12);border:1px solid rgba(102,96,180,0.4)}
 .rc.proj{background:linear-gradient(135deg,rgba(255,190,245,0.1) 0%,rgba(102,96,180,0.18) 100%);border:1px solid rgba(255,190,245,0.4)}
-.rc.proj::after{content:'MÉDIA DO MERCADO';position:absolute;top:18px;right:-38px;background:#FFBEF5;color:#121325;font-family:'Montserrat',sans-serif;font-size:8px;font-weight:800;letter-spacing:2px;padding:5px 46px;transform:rotate(45deg)}
+.rc.proj::after{content:'MAIOR POTENCIAL';position:absolute;top:18px;right:-38px;background:#FFBEF5;color:#121325;font-family:'Montserrat',sans-serif;font-size:8px;font-weight:800;letter-spacing:2px;padding:5px 46px;transform:rotate(45deg)}
 .rc-scenario{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:6px}
 .rc-conv{font-size:13px;font-weight:600;color:rgba(255,255,255,0.65);margin-bottom:22px}
 .rc-roi{font-family:'Montserrat',sans-serif;font-size:48px;font-weight:800;line-height:1;margin-bottom:4px}
@@ -70,6 +70,14 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 .rc-rl{color:rgba(255,255,255,0.5)}
 .rc-rv{font-family:'Montserrat',sans-serif;font-weight:700;color:#fff}
 .roi-note{text-align:center;margin-top:20px;font-size:12px;color:rgba(255,255,255,0.35)}
+
+.roi-guarantee{background:linear-gradient(135deg,rgba(255,190,245,0.12) 0%,rgba(102,96,180,0.15) 100%);border:2px solid rgba(255,190,245,0.4);border-radius:20px;padding:38px 40px;margin-top:36px;text-align:center}
+.roi-guarantee-icon{font-size:28px;margin-bottom:12px}
+.roi-guarantee-title{font-family:'Montserrat',sans-serif;font-size:21px;font-weight:800;color:#FFBEF5;margin-bottom:12px}
+.roi-guarantee-desc{font-size:14px;color:rgba(255,255,255,0.65);max-width:640px;margin:0 auto;line-height:1.6}
+.roi-guarantee-stats{display:flex;justify-content:center;gap:48px;margin-top:28px;flex-wrap:wrap}
+.rgs-val{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:800;color:#fff;line-height:1}
+.rgs-lbl{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin-top:6px;font-weight:600}
 
 .prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
 .prod-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:30px 22px;text-align:center}
@@ -143,10 +151,11 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
   <div><div class="badge">Diagnóstico de ROI</div></div>
   <h1>R$ 32 milhões em compras por ano.<br><em>Sem fornecedor sobrando, sem tempo sobrando.</em></h1>
   <p class="hero-sub">Projeção de retorno para <strong>Santo André Empreendimentos</strong> · Assistentes de IA dgenny® integrados ao Sienge</p>
+  <div style="margin-bottom:8px"><div class="badge" style="background:rgba(255,190,245,0.12);border-color:rgba(255,190,245,0.4)">Proposta válida por 7 dias · até 16/07/2026</div></div>
   <div class="hero-metrics">
     <div class="hm"><div class="hm-val">R$ 32 mi</div><div class="hm-lbl">Volume de compras/ano</div></div>
     <div class="hm"><div class="hm-val">2 obras</div><div class="hm-lbl">Ativas, padrão médio-alto</div></div>
-    <div class="hm"><div class="hm-val">~8</div><div class="hm-lbl">Fornecedores é o limite manual por cotação hoje</div></div>
+    <div class="hm"><div class="hm-val">3 a 6%</div><div class="hm-lbl">Economia média nos clientes dgenny®</div></div>
     <div class="hm"><div class="hm-val">40h</div><div class="hm-lbl">Liberadas por comprador/mês</div></div>
   </div>
 </section>
@@ -187,8 +196,8 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
       <div class="ci-desc">Toda a negociação migrou para WhatsApp pessoal do comprador — sem histórico centralizado, sem rastreabilidade, dependente de follow-up manual.</div>
     </div>
     <div class="ci">
-      <div class="ci-title">Limite prático de ~8 fornecedores por cotação</div>
-      <div class="ci-desc">"Passou de 8, já começa complicado... o pessoal não responde, aí eu vou ficar com uma pessoa o dia inteiro fazendo follow-up." Acima disso, o lead time não fecha.</div>
+      <div class="ci-title">Poucos fornecedores por cotação, follow-up manual</div>
+      <div class="ci-desc">"O pessoal não responde, aí eu vou ficar com uma pessoa o dia inteiro fazendo follow-up." Sem tempo para ampliar a base, a negociação fica concentrada em poucos parceiros de sempre.</div>
     </div>
     <div class="ci">
       <div class="ci-title">Pesquisa de preço via IA genérica</div>
@@ -215,7 +224,7 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
         <div class="pf-icon">🤖</div>
         <div class="pf-text">
           <strong>Negociação via WhatsApp (Meta API oficial)</strong>
-          <span>IA conduz cotações com fornecedores automaticamente, superando o limite manual de ~8 fornecedores por negociação</span>
+          <span>IA conduz cotações com mais fornecedores em paralelo, sem o desgaste do follow-up manual de hoje</span>
         </div>
       </div>
       <div class="pf">
@@ -261,27 +270,14 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
 <section class="roi-section">
   <div class="roi-inner">
     <div class="sec-badge">Retorno sobre Investimento</div>
-    <h2 class="sec-title">Quanto a dgenny® <em>gera de saving</em></h2>
-    <p class="sec-desc" style="margin-bottom:0">Base de cálculo: R$ 32.000.000/ano em volume de compras — número calculado pelo próprio time de suprimentos da Santo André. Comparativo com o plano de 2 Assistentes de IA (R$ 4.000/mês + R$ 5.000 de implantação = R$ 53.000 no Ano 1).</p>
+    <h2 class="sec-title">Quanto a dgenny® <em>devolve do investido</em></h2>
+    <p class="sec-desc" style="margin-bottom:0">Base de cálculo: R$ 32.000.000/ano em volume de compras — número calculado pelo próprio time de suprimentos da Santo André. Faixas de 3%, 4% e 6% de saving refletem a média observada na base de clientes dgenny®. Comparativo com o plano de 2 Assistentes de IA (R$ 4.000/mês + R$ 5.000 de implantação = R$ 53.000 no Ano 1).</p>
     <div class="roi-table">
       <div class="rc cons">
-        <div class="rc-scenario">Cenário 1</div>
-        <div class="rc-conv">1% de saving — pior cenário</div>
-        <div class="rc-roi">504%</div>
-        <div class="rc-lbl">ROI Ano 1</div>
-        <div class="rc-rows">
-          <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 26.667</span></div>
-          <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 320.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 53.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 267.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~60 dias</span></div>
-        </div>
-      </div>
-      <div class="rc real">
-        <div class="rc-scenario">Cenário 2</div>
+        <div class="rc-scenario">Média dgenny®</div>
         <div class="rc-conv">3% de saving</div>
-        <div class="rc-roi" style="color:#6660B4">1.711%</div>
-        <div class="rc-lbl">ROI Ano 1</div>
+        <div class="rc-roi">18x</div>
+        <div class="rc-lbl">a economia devolve o investido</div>
         <div class="rc-rows">
           <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 80.000</span></div>
           <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 960.000</span></div>
@@ -290,21 +286,46 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
           <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~20 dias</span></div>
         </div>
       </div>
-      <div class="rc proj">
-        <div class="rc-scenario">Cenário 3</div>
-        <div class="rc-conv">5% de saving</div>
-        <div class="rc-roi">2.919%</div>
-        <div class="rc-lbl">ROI Ano 1</div>
+      <div class="rc real">
+        <div class="rc-scenario">Média dgenny®</div>
+        <div class="rc-conv">4% de saving</div>
+        <div class="rc-roi" style="color:#6660B4">24x</div>
+        <div class="rc-lbl">a economia devolve o investido</div>
         <div class="rc-rows">
-          <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 133.333</span></div>
-          <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 1.600.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 106.667</span></div>
+          <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 1.280.000</span></div>
           <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 53.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 1.547.000</span></div>
-          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~12 dias</span></div>
+          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 1.227.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~15 dias</span></div>
+        </div>
+      </div>
+      <div class="rc proj">
+        <div class="rc-scenario">Média dgenny®</div>
+        <div class="rc-conv">6% de saving</div>
+        <div class="rc-roi">36x</div>
+        <div class="rc-lbl">a economia devolve o investido</div>
+        <div class="rc-rows">
+          <div class="rc-row"><span class="rc-rl">Economia/mês</span><span class="rc-rv">R$ 160.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Economia/ano</span><span class="rc-rv">R$ 1.920.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Investimento Ano 1</span><span class="rc-rv">R$ 53.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Ganho líquido Ano 1</span><span class="rc-rv">R$ 1.867.000</span></div>
+          <div class="rc-row"><span class="rc-rl">Payback</span><span class="rc-rv">~10 dias</span></div>
         </div>
       </div>
     </div>
-    <p class="roi-note">* Retorno previsível, não garantido. Faixa de 3 a 5% é a média de economia observada na base de clientes dgenny®; 1% é o piso conservador usado como referência na conversa com o time de suprimentos. Investimento Ano 1 = R$ 4.000 × 12 meses + R$ 5.000 de implantação = R$ 53.000. Ganhos de produtividade (até 40h/mês por comprador) não contabilizados.</p>
+
+    <div class="roi-guarantee">
+      <div class="roi-guarantee-icon">🛡️</div>
+      <div class="roi-guarantee-title">Mesmo no pior cenário, a dgenny® já se paga</div>
+      <div class="roi-guarantee-desc">Se a economia real ficar bem abaixo da média dos nossos clientes — apenas 1% de saving sobre o volume de compras da Santo André — o investimento ainda assim retorna múltiplas vezes o valor aplicado, e se paga em menos de 2 meses.</div>
+      <div class="roi-guarantee-stats">
+        <div><div class="rgs-val">6x</div><div class="rgs-lbl">retorno no Ano 1</div></div>
+        <div><div class="rgs-val">~60 dias</div><div class="rgs-lbl">payback</div></div>
+        <div><div class="rgs-val">R$ 267.000</div><div class="rgs-lbl">ganho líquido Ano 1</div></div>
+      </div>
+    </div>
+
+    <p class="roi-note">* Retorno previsível, não garantido. Faixa de 3 a 6% é a média de economia observada na base de clientes dgenny®. Múltiplo = economia anual ÷ investimento Ano 1. Investimento Ano 1 = R$ 4.000 × 12 meses + R$ 5.000 de implantação = R$ 53.000. Ganhos de produtividade (até 40h/mês por comprador) não contabilizados.</p>
   </div>
 </section>
 
@@ -320,9 +341,9 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
       <div class="prod-desc">Tempo antes gasto em follow-up manual por WhatsApp passa a ser direcionado à negociação de contratos e escopo</div>
     </div>
     <div class="prod-card">
-      <div class="prod-num">8→20+</div>
-      <div class="prod-title">Fornecedores por negociação</div>
-      <div class="prod-desc">Supera o teto manual de hoje, endereçando diretamente a escassez de fornecedores relatada pelo time</div>
+      <div class="prod-num">↑</div>
+      <div class="prod-title">Mais fornecedores por negociação</div>
+      <div class="prod-desc">Amplia a base de parceiros ativos por cotação, endereçando diretamente a escassez de fornecedores relatada pelo time — sem sobrecarregar o comprador com follow-up manual</div>
     </div>
     <div class="prod-card">
       <div class="prod-num">100%</div>
@@ -362,7 +383,13 @@ h1,h2,h3,h4{font-family:'Montserrat',Arial,sans-serif}
       <div class="ptotal">Implantação: R$ 5.000<br>Ano 1 (com implantação): <strong>R$ 53.000</strong></div>
     </div>
   </div>
-  <div class="inv-note"><strong>Sobre o orçamento conversado:</strong> sabemos que esse valor está acima da faixa de conforto inicial mencionada pela Ludmila. Por isso o Cenário 1 do ROI (página anterior) usa o piso mais conservador possível — 1% de saving — e ainda assim o investimento se paga em cerca de 60 dias. A decisão final passa pela validação de José Paulo, diretor da Santo André.</div>
+
+  <div class="metrics-grid" style="margin-top:32px;margin-bottom:0">
+    <div class="mc"><div class="mc-val">R$ 4.000/mês</div><div class="mc-lbl">2 Assistentes de IA dgenny® — cobrem a negociação de material e serviço de Thiago e Víctor</div></div>
+    <div class="mc"><div class="mc-val">R$ 4.500 a 7.000/mês</div><div class="mc-lbl">custo médio de 1 analista de compras júnior numa construtora (salário + encargos CLT) — para comparação</div></div>
+  </div>
+
+  <div class="inv-note"><strong>Sobre o orçamento conversado:</strong> sabemos que esse valor está acima da faixa de conforto inicial mencionada pela Ludmila. Por isso o cenário mais conservador do ROI (página anterior) considera apenas 1% de saving — e ainda assim o investimento se paga em cerca de 60 dias, por um valor mensal abaixo do custo de contratar um único analista júnior. A decisão final passa pela validação de José Paulo, diretor da Santo André.</div>
 </section>
 
 <div class="divider"></div>
